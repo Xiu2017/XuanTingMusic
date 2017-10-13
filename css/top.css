@@ -1,0 +1,140 @@
+/*以下为body背景颜色、总DIV块、顶部的CSS样式*/
+*{
+	margin      : 0px;
+	padding     : 0px;
+	cursor      : default;
+	font-family : '微软雅黑';
+    -webkit-user-select: none;
+}
+body{
+	background-color    : #AAAAAA;
+	background-image    : url('../image/welcome.png');
+	background-repeat   : no-repeat;
+	background-position : center;
+}
+
+/*--打开及关闭动画--*/
+@keyframes openFlash{
+	from{transform : rotateX(90deg);}
+	to  {transform : rotateX(0deg);}
+}
+@keyframes closeFlash{
+	from{transform : rotateX(0deg);}
+	to  {transform : rotateX(90deg);}
+}
+
+/*--定义LOGO的字体--*/
+@font-face{
+	font-family: 'logoFont';
+	src: url('../font/logofont.otf');
+}
+/*--定义图标字体--*/
+@font-face{
+	font-family: 'icon';
+	src: url('../font/icon.ttf');
+}
+
+/*--输入框提示文字颜色--*/
+::-webkit-input-placeholder {color: #77777E;}
+:-moz-placeholder {color: #77777E;}
+::-moz-placeholder {color: #77777E;}
+:-ms-input-placeholder {color: #77777E;}
+
+/*--取消浏览器默认的聚焦样式--*/
+input{outline:none;} 
+
+#all{
+	width    : 1000px;
+	height   : 600px;
+	margin   : auto;
+	overflow : hidden;
+	border-radius      : 0px 0px 3px 3px;
+	background-size    : 100% 600px;
+	box-shadow         : 20px 20px 12px rgba(0,0,0,0.2);
+	-webkit-box-shadow : 20px 20px 12px rgba(0,0,0,0.2);
+	background-repeat  : no-repeat;
+	transform          : rotateX(90deg);
+	animation          : openFlash 800ms forwards;
+	animation-delay    : 1.5s;
+}
+#header{
+	width         : 100%;
+	height        : 40px;
+	background    : -webkit-linear-gradient(top,#2B2F38,#22252E);
+	border-bottom : 1px solid #1AA6DC;
+}
+#search{
+	width   : 200px;
+	height  : 26px;
+	padding : 0px 10px;
+	margin  : 6px 0px 0px 30px;
+	border  : none;
+	float   : left;
+	color   : #FFF;
+	border-radius    : 13px;
+	background-color : #111213;
+}
+#logo{
+	width        : 306px;
+	height       : 40px;
+	color        : #FFF;
+	float        : left;
+	padding-left : 12px;
+	font-size    : 20px;
+	font-family  : "logoFont";
+	line-height  : 40px;
+}
+#logo span{
+	font-family : "logoFont";
+	color       : #19B5F0;
+}
+#time_off,.showtime,.cleartime{
+	margin-top   : 11px;
+	margin-right : 18px;
+	float        : right;
+	color        : #FFF;
+	font-size    : 15px;
+	font-family  : "icon";
+	cursor: pointer;
+}
+.cleartime{
+	margin-right : 4px;
+	display      : none;
+	color        : #DD111C;
+}
+.cleartime:hover{
+	color : #f00;
+}
+.showtime{
+	font-size   : 14px;
+	margin-top  : 9px;
+	font-family : "微软雅黑";
+	display     : none;
+	cursor      : default;
+}
+#time_off:hover{
+	color : #19B5F0;
+}
+#selecttime{
+	width    : 100px;
+	height   : 155px;
+	position : relative;
+	top      : -564px;
+	left     : 890px;
+	display  : none;
+	background-color: #000;
+}
+#selecttime ul,#selectmode ul{
+	color           : #fff;
+	font-size       : 14px;
+	cursor          : pointer;
+	list-style-type : none;
+}
+#selecttime ul li,#selectmode ul li{
+	text-align : center;
+	padding    : 6px 0px;
+}
+#selecttime ul li:hover,#selectmode ul li:hover{
+	color: #1CB5F0;
+	background-color: #111;
+}

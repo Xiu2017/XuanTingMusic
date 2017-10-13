@@ -1,0 +1,98 @@
+/*--定义图标字体--*/
+@font-face{
+	font-family : 'icon';
+	src : url('../font/icon.ttf');
+}
+#center{
+	width    : 100%;
+	height   : 498px;
+	overflow : hidden;
+	background-color : #191C23;
+}
+#center_list{
+	width       : 158px;
+	height      : 100%;
+	padding-top : 20px;
+	float       : left;
+	background-color : #262A32;
+}
+#local,#collection{
+	font-size   : 12px;
+	margin-left : 12px;
+	color       : #95959D;
+}
+#localul{
+	width      : 100%;
+	height     : 100px;
+	margin-top : 12px;
+}
+#localul li{
+	height      : 35px;
+	font-size   : 15px;
+	line-height : 35px;
+	color       : #DDDDDD;
+}
+#list1{
+	padding-left     : 8px;
+	border-left      : 3px solid #19B5F0;
+	background-color : #1C1E25;
+}
+#list1 span{
+	padding-right : 11px;
+}
+#list2{
+	padding-left : 7px;
+	border-left  : 3px solid #262A32;
+}
+#list2 span{
+	padding-right : 10px;
+}
+#localul li span{
+	padding-left : 10px;
+	font-family  : 'icon';
+}
+#localul li:hover,#collectionul li:hover{
+	background-color : rgba(0,0,0,.2);
+	color            : #19B5F0;
+}
+#add{
+	float        : right;
+	margin-right : 20px;
+	color        : #939599;
+}
+#add:hover{
+	color : #19B5F0;
+}
+#collectionul{
+	width      : 100%;
+	height     : 240px;
+	margin-top : 12px;
+}
+#collectionul li{
+	height       : 35px;
+	font-size    : 15px;
+	line-height  : 35px;
+	padding-left : 22px;
+	color        : #DDDDDD;
+}
+#collectionul li span{
+	font-family   : 'icon';
+	padding-right : 12px;
+}
+#listtop{
+	color : #262A32;
+}
+#center_left{
+	width            : 767px;
+	height           : 100%;
+	overflow         : hidden;
+	background-color : #181B22;
+	/*border-right     : 1px solid #393C45;*/
+	border-right     : 1px solid #333;
+	float            : left;
+}
+#center_left iframe{
+	width  : 767px;
+	height : 100%;
+	border : none;
+}

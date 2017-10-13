@@ -1,0 +1,94 @@
+﻿		*{
+			margin  : 0px;
+			padding : 0px;
+            cursor  : default;
+            -webkit-user-select: none;
+		}
+        body{
+            width       : 189px;
+            font-family : '微软雅黑';
+            padding     : 0px 20px 0px 20px;
+        }
+        /*--定义图标字体--*/
+        @font-face{
+            font-family: 'icon';
+            src: url('../font/icon.ttf');
+        }
+		ul{
+            list-style-type : none;
+			margin          : 145px 0px;
+		}
+		li{
+            font-size : 14px;
+            padding   : 8px 0px;
+            color     : #FFF;
+		}
+        #nolrc{
+            font-size : 18px;
+            margin    : auto;
+            position  : fixed;
+            top       : 120px;
+            left      : 0px;
+            right     : 0px;
+            color     : #999;
+        }
+        #audioinfo{
+            position : fixed;
+            display  : none;
+            top      : 0px;
+            left     : 0px;
+            right    : 0px;
+            margin   : auto;
+            color    : #fff;
+            height   : 78px;
+            overflow         : hidden; 
+            white-space      : nowrap;
+            text-overflow    : ellipsis;
+            /*border-bottom    : 1px solid #393C45;*/
+            border-bottom    : 1px solid #555;
+            background-color : #191C23;
+        }
+        .span1{
+            display       : block;
+            font-size     : 22px;
+            margin-bottom : 16px;
+            overflow      : hidden; 
+            white-space   : nowrap;
+            text-overflow : ellipsis;
+        }
+        .span2,.span3{
+            font-size: 14px;
+        }
+        .span2 span:hover,.span3 span:hover{
+            cursor : pointer;
+            color  : #18B3EE;
+        }
+        .span3{
+            margin-left : 20px;
+        }
+        .delrc{
+            width: 30px;
+            height: 116px;
+            display: none;
+            position: fixed;
+            top: 30%;
+            right: 0px;
+        }
+        .de1,.de2{
+            font-family: 'icon';
+            font-size: 30px;
+            cursor: pointer;
+            color: #888;
+            display: block;
+            margin-bottom: 17px;
+        }
+        .de1:hover,.de2:hover{
+            color: #18B3EE;
+        }
+        .delrctime{
+            font-size: 13px;
+            cursor: pointer;
+            color: #888;
+            display: block;
+            margin-bottom: 17px;
+        }

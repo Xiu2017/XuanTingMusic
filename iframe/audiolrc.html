@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html onclick="window.parent.hiddenwin()">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/audiolrc.css" />
+</head>
+<body>
+<center>
+    <div id="audioinfo">
+        <span class="span1">炫听音乐</span>
+        <span class="span2">歌手：--</span>
+        <span class="span3">专辑：--</span>
+    </div>
+	<ul id="audiolrc">
+	</ul>
+    <center id="nolrc">炫听音乐，炫酷生活</center>
+</center>
+<div class="delrc" onmouseover="window.parent.openlrc(0)">
+    <center>
+        <span class="de1" title="歌词提前0.2秒" onclick="delrc(-0.2)">&#xf106;</span>
+        <span class="delrctime">0</span>
+        <span class="de2" title="歌词延后0.2秒" onclick="delrc(0.2)">&#xf107;</span>
+    </center>
+</div>
+</body>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/audiolrc.js"></script>
+</html>

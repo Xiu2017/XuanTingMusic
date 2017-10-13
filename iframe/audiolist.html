@@ -1,0 +1,36 @@
+﻿<!DOCTYPE HTML>
+<html onclick="window.parent.hiddenwin()">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/audiolist.css" />
+</head>
+<body onload="init()">
+    <input type="file" id="files" name="files[]" multiple webkitdirectory style="display: none" />
+    <audio id="audio" >您的浏览器不支持audio标签</audio>
+    <audio id="get">您的浏览器不支持audio标签</audio>
+    <div>
+        <table id="title">
+            <tr id="litop">
+                <td id="number"></td>
+                <td id="songname">歌曲</td>
+                <td id="singer">歌手</td>
+                <td id="album">专辑</td>
+                <td id="time">时长</td>
+            </tr>
+        </table>
+        <table id="list">
+        </table>
+    </div>
+    <center>
+        <div id="addfiles">
+            <img src="../image/addfiles.png" /><br />
+            <span>请扫描歌曲到本地列表</span>
+        </div>
+        <div class="addfiles" onclick="$('#files').click()">选择扫描目录</div>
+    </center>
+    <div class="now" onclick="now()" title="定位当前歌曲">&#xe83d;</div>
+</body>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/id3-minimized.js" type="text/javascript"></script>
+    <script src="../js/audiolist.js" type="text/javascript"></script>
+</html>

@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html onclick="hiddenwin()">
+	<head>
+		<meta charset="UTF-8">
+		<title>炫听音乐</title>
+		<link rel="shortcut icon" href="favicon.ico" >
+		<link rel="stylesheet" type="text/css" href="./css/top.css" />
+		<link rel="stylesheet" type="text/css" href="./css/center_left.css" />
+		<link rel="stylesheet" type="text/css" href="./css/center_right.css" />
+		<link rel="stylesheet" type="text/css" href="./css/bottom.css" />
+		<script rel="javascript" type="text/javascript" src="./js/myjs.js"></script>
+		<script rel="javascript" type="text/javascript" src="./js/pinyin.js"></script>
+		<script src="./js/jquery.js"></script>
+	</head>
+<body id="body" onload="init()">
+	<div id="all">
+		<div id="header">
+			<div id="logo"><span>XUANTING</span> MUSIC</div>
+			<input id="search" oninput="search()" placeholder="搜索歌曲/歌手名" />
+			<span id="time_off" onclick="timeOff();event.stopPropagation();" title="定时关闭">&#xe828;</span>
+			<span class="showtime"></span>
+			<span class="cleartime" title="取消定时" onclick="cleartime()">&#xe830;</span>
+		</div>
+		<div id="center">
+			<div id="center_left">
+				<iframe id="audiolist" name="audiolist" src="./iframe/audiolist.html" scrolling="auto"></iframe>
+			</div>
+			<div id="center_right" onmouseover="openlrc(1)" onmouseout="openlrc(0)">
+				<div id="center_top">
+					<div id="vinyl">
+						<center><img id="vinylimg" src="./image/novinyl.png"></img></center>
+					</div>
+					<div id="vinylheader"></div>
+				</div>
+				<iframe id="audiolrc" name="audiolrc" src="./iframe/audiolrc.html" scrolling="no"></iframe>
+				<div class="open" onclick="showLrc()">&#xf104;</div>
+			</div>
+		</div>
+		<div id="bottom">
+			<ul id="control">
+				<li id="last" onclick="play_last()">&#xe82d;</li>
+				<li id="play" onclick="play_pause()">&#xe831;</li>
+				<li id="next" onclick="play_next()">&#xe82e;</li>
+			<ul>
+			<div id="pro">
+				<span id="song_name">炫听音乐</span>
+				<span id="song_time">00:00/00:00</span>
+				<div id="pro_bar" onclick="bar_val()"></div>
+				<div id="pro_time"></div>
+			</div>
+			<div id="menu">
+				<div id="playmode" onclick="setPlayMode(0);event.stopPropagation();" title="播放模式">&#xe83f;</div>
+				<div id="volume" onclick="mute()" title="静音/还原">&#xe802;</div>
+				<div id="volbar" onclick="setVolume()">
+					<div id="volvalue"></div>
+				</div>
+			</div>
+		</div>
+		<div id="selecttime">
+			<ul>
+				<li onclick="setTimeOff(10)">10 分钟</li>
+				<li onclick="setTimeOff(20)">20 分钟</li>
+				<li onclick="setTimeOff(30)">30 分钟</li>
+				<li onclick="setTimeOff(60)">1 小时</li>
+				<li onclick="setTimeOff(120)">2 小时</li>
+			</ul>
+		</div>
+		<div id="selectmode">
+			<ul>
+				<li onclick="setPlayMode(1)"><span>&#xe83f;</span>列表循环</li>
+				<li onclick="setPlayMode(2)"><span>&#xe840;</span>单曲循环</li>
+				<li onclick="setPlayMode(3)"><span>&#xe83e;</span>随机播放</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,144 @@
+﻿#bottom{
+	width      : 100%;
+	height     : 60px;
+	background : -webkit-linear-gradient(top,#222630,#191C24);
+	border-top : 1px solid #393C45;
+}
+/*--定义图标字体--*/
+@font-face{
+	font-family: 'icon';
+	src: url('../font/icon.ttf');
+}
+@font-face{
+    font-family: 'icon2';
+    src: url('../font/icon2.ttf');
+}
+#control{
+	font-size      : 26px;
+	margin         : 9px 0px 0px 20px;
+	color          : #FFF;
+	list-style-type: none;
+}
+#control li{
+	width       : 42px;
+	height      : 42px;
+	margin      : 0px 7px;
+	float       : left;
+	line-height : 42px;
+	font-family : "icon";
+	text-align  : center;
+	cursor      : pointer;
+}
+#control li:hover{
+	color : #19B5F0;
+}
+#play{
+	width  : 42px;
+	height : 44px;
+	border-radius    : 23px;
+	background-color : #111213;
+	padding-left     : 2px;
+}
+#pro{
+	width       : 550px;
+	height      : 40px;
+	float       : left;
+	color       : #FFF;
+	margin-left : 30px;
+	font-size   : '微软雅黑';
+	overflow    : hidden;
+	background-image  : url("../image/pro_bar.png");
+	background-repeat : no-repeat;
+	background-size   : 0px;
+}
+#song_name{
+	max-width   : 430px;
+	max-height  : 18px;
+	font-size   : 14px;
+	float       : left;
+	overflow    : hidden;
+    white-space : nowrap;
+}
+#song_time{
+	font-size   : 14px;
+	font-weight : lighter;
+	float       : right;
+	font-family : '黑体';
+}
+#pro_bar{
+	width  : 550px;
+	height : 4px;
+	cursor : pointer;
+	background-image  : url('../image/pro_bar.png');
+	background-repeat : no-repeat;
+	background-size   : 0%;
+	background-color  : #373942;
+	border-radius     : 2px;
+	margin-top        : 32px;
+}
+#pro_time{
+	width            : 12px;
+	height           : 12px;
+	border-radius    : 6px;
+	margin-top       : -8px;
+	background-color : #FFF;
+	display          : none;
+}
+#menu{
+	width     : 180px;
+	height    : 20px;
+	margin    : 8px 0px 0px 37px;
+	float     : left;
+	font-size : 20px;
+	color     : #FFF;
+}
+#playmode,#volume{
+	width       : 24px;
+	height      : 20px;
+	float       : left;
+	text-align  : center;
+	line-height : 20px;
+	font-family : 'icon2','黑体';
+	cursor      : pointer;
+}
+#playmode{
+	margin-right : 20px;
+}
+#playmode:hover,#volume:hover{
+	color : #19B5F0;
+}
+#selectmode{
+	width            : 110px;
+	height           : 93px;
+	background-color : #000;
+	position         : relative;
+	top              : -141px;
+	left             : 797px;
+	display          : none;
+}
+#selectmode ul li span{
+	font-family  : "icon2";
+	margin-right : 10px;
+	font-size    : 16px;
+}
+#volbar{
+	width       : 100px;
+	height      : 4px;
+	float       : left;
+	cursor      : pointer;
+	margin-left : 4px;
+	margin-top  : 9px;
+	border-radius     : 2px;
+	background-color  : #373942;
+	background-image  : url('../image/pro_bar.png');
+	background-repeat : no-repeat;
+	background-size   : 50%;
+}
+#volvalue{
+	width            : 12px;
+	height           : 12px;
+	border-radius    : 6px;
+	margin-top       : -4px;
+	margin-left      : 44px;
+	background-color : #DDDDDD;
+}

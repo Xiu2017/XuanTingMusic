@@ -1,0 +1,77 @@
+#center_top{
+	width  : 229px;
+	height : 244px;
+	float  : right;
+}
+/*--定义图标字体--*/
+@font-face{
+	font-family : 'icon';
+	src : url('../font/icon.ttf');
+}
+@keyframes vinylFlash{
+	from{transform:rotate(0deg);}
+	to{transform:rotate(360deg);}
+}
+@keyframes vinyldown{
+	from{transform:rotate(-20deg);}
+	to{transform:rotate(12deg);}
+}
+@keyframes vinylup{
+	from{transform:rotate(12deg);}
+	to{transform:rotate(-20deg);}
+}
+.open{
+	font-size   : 46px;
+	margin-left : 6px;
+	margin-top  : -250px;
+	color       : #888;
+	z-index     : 10;
+	float       : left;
+	display     : none;
+	font-family : 'icon';
+	cursor      : pointer;
+}
+.open:hover{
+	color : #18B3EE;
+}
+#vinylheader{
+	width  : 54px;
+	height : 86px;
+	float  : left;
+	margin : -190px 0px 0px 150px;
+	background       : url('../image/vinylheader.png') no-repeat;
+	background-size  : 100% 100%;
+	transform        : rotate(-20deg);
+	transform-origin : 17% 11.35%;
+}
+#vinyl{
+	width             : 160px;
+	height            : 160px;
+	margin            :  20px 0px 0px 35px;
+	border-radius     : 80px;
+	background-image  : url('../image/Vinyl.png');
+	background-repeat : no-repeat;
+	background-size   : 100% 100%;
+	animation         : vinylFlash 30s linear infinite forwards;
+	animation-play-state: paused;
+}
+#vinylimg{
+	width         : 108px;
+	height        : 108px;
+	margin-top    : 26px;
+	border-radius : 54px;
+}
+#center_right{
+	width    : 230px;
+	height   : 496px;
+	overflow : hidden;
+	float    : right;
+}
+#center_right iframe{
+	width      : 230px;
+	height     : 260px;
+	border     : none;
+	float      : right;
+	margin     : auto;
+	margin-top : -30px;
+}
