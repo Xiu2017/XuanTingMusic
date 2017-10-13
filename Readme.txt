@@ -1,3 +1,5 @@
-使用说明：
-1、双击ASP调试工具即可打开项目（直接打开index.html会存在iframe跨域访问限制导致项目无法工作）
-2、不支持QQ浏览器和IE浏览器，推荐使用谷歌浏览器
+Instructions:
+
+1: double-click the ASP debugger to open the project (directly open index.html will have iframe cross domain access restrictions, resulting in the project can not work)
+
+2: does not support QQ browser and IE browser, recommend the use of Google browser
